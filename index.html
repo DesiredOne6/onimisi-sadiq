@@ -1,30 +1,42 @@
 <!DOCTYPE html>
-
-<title>Onimisi Sadiq Portfolio Site | Software Engineer, UMich Student (C++, Java, Ansys, Figma)</title>
-<meta name="description" content="Onimisi Sadiq is a Software Engineer with a wide array of skills from programming, writing, design. Love to meet new people & learn all about startups and businesses.">
-
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Agency - Start Bootstrap Theme</title>
+        <title>Onimisi Sadiq | Software Engineer &amp; Computer Engineering Student</title>
+        <meta name="description" content="Onimisi Sadiq is a Computer Engineering student at the University of Michigan and a software engineer building at the intersection of robotics, software, and machine learning." />
+        <meta name="author" content="Onimisi Sadiq" />
+        <!-- Open Graph -->
+        <meta property="og:title" content="Onimisi Sadiq | Software Engineer" />
+        <meta property="og:description" content="Building reliable systems at the intersection of robotics, software, and machine learning." />
+        <meta property="og:type" content="website" />
+        <meta name="theme-color" content="#0a0d14" />
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Enhancement layer (modern dark theme, animations) -->
+        <link href="css/enhancements.css" rel="stylesheet" />
+        <!-- If JS is disabled, don't hide reveal-animated content -->
+        <noscript>
+            <style>.reveal { opacity: 1 !important; transform: none !important; }</style>
+        </noscript>
     </head>
     <body id="page-top">
+        <!-- Scroll progress bar -->
+        <div id="scrollProgress"></div>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand" href="#page-top"></a>
+                <a class="navbar-brand" href="#page-top">Onimisi Sadiq</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars ms-1"></i>
@@ -32,7 +44,8 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#aboutme">About Me</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#stack">Tech Stack</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                         <li class="nav-item"><a class="nav-link" href="assets/onimisi-sadiq-resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
                     </ul>
@@ -41,11 +54,31 @@
         </nav>
         <!-- Masthead-->
         <header class="masthead">
+            <div class="hero-grid"></div>
             <div class="container">
-                <div class="masthead-heading">Onimisi Sadiq</div>
-                <div class="masthead-subheading text-uppercase">Software Engineer</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+                <div class="reveal">
+                    <span class="hero-eyebrow"><span class="dot"></span> Available for internships &amp; collaborations</span>
+                </div>
+                <div class="masthead-heading reveal" data-delay="1">Onimisi Sadiq</div>
+                <div class="masthead-subheading reveal" data-delay="2">I'm a <span class="hero-role">Software Engineer</span><span class="hero-caret"></span></div>
+                <p class="hero-tagline reveal" data-delay="3">
+                    Computer Engineering student at the University of Michigan, building reliable systems at the intersection of
+                    robotics, software, and machine learning.
+                </p>
+                <div class="hero-actions reveal" data-delay="4">
+                    <a class="btn btn-primary btn-xl" href="#portfolio"><i class="fas fa-layer-group me-2"></i>View My Work</a>
+                    <a class="btn-ghost" href="#contact"><i class="fas fa-paper-plane"></i>Get In Touch</a>
+                    <a class="btn-ghost" href="assets/onimisi-sadiq-resume.pdf" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-arrow-down"></i>Resume</a>
+                </div>
+                <div class="hero-socials reveal" data-delay="5">
+                    <a href="https://github.com/DesiredOne6" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/onimisi-sadiq-6bb9b12b0" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
             </div>
+            <a class="scroll-cue" href="#aboutme" aria-label="Scroll to about section">
+                <span class="mouse"></span>
+                <span>Scroll</span>
+            </a>
         </header>
         <!-- Services-->
         <section class="page-section" id="aboutme">
@@ -54,13 +87,60 @@
                     <h2 class="section-heading text-uppercase">About Me</h2>
                 </div>
                 <div class="row align-items-center">
-                    <div class="col-lg-4 text-center mb-4 mb-lg-0">
-                        <img class="img-fluid rounded-circle" src="assets/img/picOfMe.jpg" alt="Onimisi Sadiq" style="width: 280px; height: 280px; object-fit: cover; border: 7px solid #e9ecef;" />
+                    <div class="col-lg-4 text-center mb-4 mb-lg-0 reveal">
+                        <span class="about-photo-wrap">
+                            <img class="img-fluid rounded-circle" src="assets/img/picOfMe.jpg" alt="Onimisi Sadiq" style="width: 280px; height: 280px; object-fit: cover;" />
+                        </span>
                     </div>
-                    <div class="col-lg-8">
+                    <div class="col-lg-8 reveal" data-delay="1">
                         <h3 class="section-subheading text-muted text-start" style="font-size: 1.15rem; line-height: 1.8;">
                             I am a Computer Engineering student at the University of Michigan with a passion for building reliable systems. My technical interests lie at the intersection of robotics, software engineering, and machine learning. Driven by a hands-on approach to engineering, my experience ranges from hardware prototyping and computer-aided design to application development and programming. Beyond the classroom, I am deeply involved in engineering leadership, academic mentorship, and community-building initiatives on campus. I thrive in collaborative environments where complex problems require creative solutions. When I’m not diving into code or engineering design, you can usually find me staying active on the basketball court, exploring nature, or watching movies.
                         </h3>
+                        <div class="about-facts">
+                            <span class="fact"><i class="fas fa-graduation-cap"></i> University of Michigan</span>
+                            <span class="fact"><i class="fas fa-microchip"></i> Computer Engineering</span>
+                            <span class="fact"><i class="fas fa-location-dot"></i> Ann Arbor, MI</span>
+                            <span class="fact"><i class="fas fa-robot"></i> Robotics &amp; ML</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Tech Stack-->
+        <section class="page-section" id="stack">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="section-heading">Tech Stack</h2>
+                    <h3 class="section-subheading text-muted">The languages, tools, and disciplines I reach for when building things.</h3>
+                </div>
+                <div class="stack-grid">
+                    <div class="stack-card reveal">
+                        <div class="stack-icon"><i class="fas fa-code"></i></div>
+                        <h4>Languages</h4>
+                        <div class="stack-tags">
+                            <span>C++</span><span>Java</span><span>Python</span><span>JavaScript</span><span>C</span>
+                        </div>
+                    </div>
+                    <div class="stack-card reveal" data-delay="1">
+                        <div class="stack-icon"><i class="fas fa-robot"></i></div>
+                        <h4>Robotics &amp; Hardware</h4>
+                        <div class="stack-tags">
+                            <span>Arduino</span><span>Embedded C</span><span>Sensors</span><span>Prototyping</span>
+                        </div>
+                    </div>
+                    <div class="stack-card reveal" data-delay="2">
+                        <div class="stack-icon"><i class="fas fa-brain"></i></div>
+                        <h4>ML &amp; Data</h4>
+                        <div class="stack-tags">
+                            <span>Machine Learning</span><span>Computer Vision</span><span>Data Scraping</span><span>Analysis</span>
+                        </div>
+                    </div>
+                    <div class="stack-card reveal" data-delay="3">
+                        <div class="stack-icon"><i class="fas fa-compass-drafting"></i></div>
+                        <h4>Design &amp; CAD</h4>
+                        <div class="stack-tags">
+                            <span>Figma</span><span>Ansys Discovery</span><span>UI/UX</span><span>CAD</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -75,7 +155,7 @@
                 <div class="row">
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
+                        <div class="portfolio-item reveal">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#project1">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -90,7 +170,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
+                        <div class="portfolio-item reveal">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#project2">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -105,7 +185,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
+                        <div class="portfolio-item reveal">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#project3">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -120,7 +200,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
                         <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
+                        <div class="portfolio-item reveal">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#project4">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -135,7 +215,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
                         <!-- Portfolio item 5-->
-                        <div class="portfolio-item">
+                        <div class="portfolio-item reveal">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#project5">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -150,7 +230,7 @@
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <!-- Portfolio item 6-->
-                        <div class="portfolio-item">
+                        <div class="portfolio-item reveal">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#project6">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -178,16 +258,19 @@
                     <h2 class="section-heading text-uppercase">Contact Me</h2>
                 </div>
                 
-                <div class="row justify-content-center mt-5">
-                    <div class="col-lg-8 text-center">
-                        <iframe 
-                            title="Contact Form"
-                            src="https://docs.google.com/forms/d/e/1FAIpQLSfiNWPjCHwIBF5nOELIZ356vR9grjWtgPO2S693aOPd0pbVTg/viewform?embedded=true" 
-                            width="100%" 
-                            height="1000" 
-                            style="border: none; margin: 0;">
-                            Loading…
-                        </iframe>
+                <h3 class="section-subheading text-muted text-center">Have an opportunity, a question, or just want to say hi? Drop me a message below.</h3>
+                <div class="row justify-content-center mt-4">
+                    <div class="col-lg-8 text-center reveal">
+                        <div class="contact-form-card">
+                            <iframe
+                                title="Contact Form"
+                                src="https://docs.google.com/forms/d/e/1FAIpQLSfiNWPjCHwIBF5nOELIZ356vR9grjWtgPO2S693aOPd0pbVTg/viewform?embedded=true"
+                                width="100%"
+                                height="1000"
+                                style="border: none; margin: 0;">
+                                Loading…
+                            </iframe>
+                        </div>
                     </div>
                 </div>
 
@@ -388,10 +471,14 @@
                 </div>
             </div>
         </div>
+        <!-- Back to top -->
+        <button id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!-- Enhancement JS (typing hero, scroll reveal, progress) -->
+        <script src="js/enhancements.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
