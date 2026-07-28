@@ -778,3 +778,30 @@ section#contact iframe { border-radius: 16px; }
     z-index: 2000;
     transition: width 0.1s linear;
 }
+
+/* Placeholder tile for projects without a preview image yet */
+.portfolio-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    width: 100%;
+    background: linear-gradient(140deg, var(--surface) 0%, var(--bg) 100%);
+    border: 1px solid var(--border-strong);
+    color: var(--text-dim);
+    text-align: center;
+}
+.portfolio-placeholder i {
+    font-size: 2.75rem;
+    background: var(--grad-accent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.portfolio-placeholder span {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--text);
+}
